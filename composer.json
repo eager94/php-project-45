@@ -1,0 +1,12 @@
+{
+    "name": "hexlet/code",
+    "description": "brain games",
+    "type": "project",
+    "authors": [
+        {
+            "name": "eager94"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
