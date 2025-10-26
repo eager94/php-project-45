@@ -9,5 +9,6 @@
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=eager94_php-project-45&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=eager94_php-project-45)
 
 [![asciicast](https://asciinema.org/a/751555.svg)](https://asciinema.org/a/751555)
+[![asciicast](https://asciinema.org/a/751590.svg)](https://asciinema.org/a/751590)
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/eager94/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/eager94/php-project-45/actions)
