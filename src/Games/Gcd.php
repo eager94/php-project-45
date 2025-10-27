@@ -1,0 +1,33 @@
+<?php
+
+namespace BrainGames\Games\Gcd;
+
+use function BrainGames\Engine\runGame;
+
+function playGcd()
+{
+    $questionsAndAnswers = [];
+
+    for ($i = 0; $i < 3; $i++) {
+        $num1 = rand(1, 100);
+        $num2 = rand(1, 100);
+
+        $question = "$num1 $num2";
+        $correctAnswer = (string) gcd($num1, $num2);
+
+        $questionsAndAnswers[] = [$question, $correctAnswer];
+    }
+
+    runGame('gcd', $questionsAndAnswers);
+}
+
+function gcd(int $a, int $b): int
+{
+    while ($b !== 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+
+    return $a;
+}

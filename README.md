@@ -10,5 +10,6 @@
 
 [![asciicast](https://asciinema.org/a/751555.svg)](https://asciinema.org/a/751555)
 [![asciicast](https://asciinema.org/a/751590.svg)](https://asciinema.org/a/751590)
+[![asciicast](https://asciinema.org/a/751786.svg)](https://asciinema.org/a/751786)
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/eager94/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/eager94/php-project-45/actions)
