@@ -11,7 +11,8 @@ function runGame(string $gameKey, array $questionsAndAnswers)
     $instructions = [
         'even' => 'Answer "yes" if the number is even, otherwise answer "no".',
         'calc' => 'What is the result of the expression?',
-        'gcd' => 'Find the greatest common divisor of given numbers.'
+        'gcd' => 'Find the greatest common divisor of given numbers.',
+        'progression' => 'What number is missing in the progression?'
     ];
 
     $instruction = $instructions[$gameKey] ?? 'Wrong gameKey! See src/Engine array $instructions';
