@@ -9,10 +9,10 @@ function playProgression()
     $questionsAndAnswers = [];
 
     for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
-        $length = rand(5, 10);
-        $start = rand(1, 50);
-        $step = rand(1, 10);
-        $hiddenIndex = rand(0, $length - 1);
+        $length = random_int(5, 10);
+        $start = random_int(1, 50);
+        $step = random_int(1, 10);
+        $hiddenIndex = random_int(0, $length - 1);
 
         $progression = generateProgression($start, $step, $length, $hiddenIndex);
         $question = implode(' ', $progression);

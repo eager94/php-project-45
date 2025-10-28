@@ -10,8 +10,8 @@ function playCalc()
     $operators = ['+', '-', '*'];
 
     for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
-        $num1 = rand(1, 100);
-        $num2 = rand(1, 100);
+        $num1 = random_int(1, 100);
+        $num2 = random_int(1, 100);
         $operator = $operators[array_rand($operators)];
 
         $question = "$num1 $operator $num2";

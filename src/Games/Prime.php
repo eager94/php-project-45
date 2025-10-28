@@ -9,7 +9,7 @@ function playPrime()
     $questionsAndAnswers = [];
 
     for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
-        $number = rand(2, 100);
+        $number = random_int(2, 100);
         $question = (string) $number;
         $correctAnswer = isPrime($number) ? 'yes' : 'no';
 
