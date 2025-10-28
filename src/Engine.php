@@ -7,7 +7,7 @@ use function cli\line;
 use function cli\prompt;
 
 const ROUNDS_COUNT = 3;
-function runGame(string $gameKey, array $questionsAndAnswers)
+function runGame(string $gameKey, array $questionsAndAnswers): void
 {
     $instructions = [
         'even' => 'Answer "yes" if the number is even, otherwise answer "no".',

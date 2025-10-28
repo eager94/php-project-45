@@ -6,7 +6,7 @@ use function BrainGames\Cli\greet;
 use function cli\line;
 use function cli\prompt;
 
-function playEven()
+function playEven(): void
 {
     $name = greet();
     line('Answer "yes" if the number is even, otherwise answer "no".');

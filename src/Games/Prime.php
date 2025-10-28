@@ -4,7 +4,7 @@ namespace BrainGames\Games\Prime;
 
 use function BrainGames\Engine\runGame;
 
-function playPrime()
+function playPrime(): void
 {
     $questionsAndAnswers = [];
 

@@ -4,7 +4,7 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Engine\runGame;
 
-function playGcd()
+function playGcd(): void
 {
     $questionsAndAnswers = [];
 

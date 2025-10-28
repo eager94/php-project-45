@@ -4,7 +4,7 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\runGame;
 
-function playCalc()
+function playCalc(): void
 {
     $questionsAndAnswers = [];
     $operators = ['+', '-', '*'];

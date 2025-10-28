@@ -4,7 +4,7 @@ namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\runGame;
 
-function playProgression()
+function playProgression(): void
 {
     $questionsAndAnswers = [];
 
