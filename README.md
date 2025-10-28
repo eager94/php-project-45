@@ -1,4 +1,3 @@
-[![Actions Status](https://github.com/eager94/php-project-45/workflows/hexlet-check/badge.svg)](https://github.com/YOUR_USERNAME/php-project-45/actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eager94_php-project-45&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eager94_php-project-45)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=eager94_php-project-45&metric=bugs)](https://sonarcloud.io/summary/new_code?id=eager94_php-project-45)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=eager94_php-project-45&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=eager94_php-project-45)
