@@ -8,7 +8,7 @@ function playProgression()
 {
     $questionsAndAnswers = [];
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
         $length = rand(5, 10);
         $start = rand(1, 50);
         $step = rand(1, 10);

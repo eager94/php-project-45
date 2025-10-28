@@ -11,7 +11,7 @@ function playEven()
     $name = greet();
     line('Answer "yes" if the number is even, otherwise answer "no".');
 
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
         $number = rand(1, 100);
         line('Question: %s', $number);
         $userAnswer = prompt('Your answer');

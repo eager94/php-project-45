@@ -6,6 +6,7 @@ use function BrainGames\Cli\greet;
 use function cli\line;
 use function cli\prompt;
 
+const ROUNDS_COUNT = 3;
 function runGame(string $gameKey, array $questionsAndAnswers)
 {
     $instructions = [
