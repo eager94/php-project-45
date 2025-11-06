@@ -4,34 +4,37 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\runGame;
 
-function playCalc(): void
-{
-    $questionsAndAnswers = [];
-    $operators = ['+', '-', '*'];
+use const BrainGames\Engine\ROUNDS_COUNT;
 
-    for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
+function calculate(int $a, int $b, string $operator): int
+{
+    switch ($operator) {
+        case '+':
+            return $a + $b;
+        case '-':
+            return $a - $b;
+        case '*':
+            return $a * $b;
+        default:
+            return 0;
+    }
+}
+
+function run(): void
+{
+    $operators = ['+', '-', '*'];
+    $questionsAndAnswers = [];
+
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $num1 = random_int(1, 100);
         $num2 = random_int(1, 100);
         $operator = $operators[array_rand($operators)];
 
         $question = "$num1 $operator $num2";
-        $correctAnswer = '';
-        switch ($operator) {
-            case '+':
-                $correctAnswer = (string) ($num1 + $num2);
-                break;
-            case '-':
-                $correctAnswer = (string) ($num1 - $num2);
-                break;
-            case '*':
-                $correctAnswer = (string) ($num1 * $num2);
-                break;
-            default:
-                $correctAnswer = '0';
-                break;
-        }
-        $questionsAndAnswers[] = [$question, $correctAnswer];
+        $answer = (string) calculate($num1, $num2, $operator); // ← (string) здесь
+
+        $questionsAndAnswers[] = [$question, $answer];
     }
 
-    runGame('calc', $questionsAndAnswers);
+    runGame('What is the result of the expression?', $questionsAndAnswers);
 }

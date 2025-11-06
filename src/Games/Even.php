@@ -1,32 +1,27 @@
 <?php
 
-namespace BrainGames\Even;
+namespace BrainGames\Games\Even;
 
-use function BrainGames\Cli\greet;
-use function cli\line;
-use function cli\prompt;
+use function BrainGames\Engine\runGame;
 
-function playEven(): void
+use const BrainGames\Engine\ROUNDS_COUNT;
+
+function isEven(int $number): bool
 {
-    $name = greet();
-    line('Answer "yes" if the number is even, otherwise answer "no".');
+    return $number % 2 === 0;
+}
 
-    for ($i = 0; $i < \BrainGames\Engine\ROUNDS_COUNT; $i++) {
+function run(): void
+{
+    $questionsAndAnswers = [];
+
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $number = random_int(1, 100);
-        line('Question: %s', $number);
-        $userAnswer = prompt('Your answer');
+        $question = (string) $number;
+        $correctAnswer = isEven($number) ? 'yes' : 'no';
 
-        $isEven = $number % 2 === 0;
-        $correctAnswer = $isEven ? 'yes' : 'no';
-
-        if ($userAnswer === $correctAnswer) {
-            line('Correct!');
-        } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
-            line("Let's try again, %s!", $name);
-            return;
-        }
+        $questionsAndAnswers[] = [$question, $correctAnswer];
     }
 
-    line('Congratulations, %s!', $name);
+    runGame('Answer "yes" if the number is even, otherwise answer "no".', $questionsAndAnswers);
 }

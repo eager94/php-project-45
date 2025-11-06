@@ -1,9 +1,13 @@
 #!/usr/bin/env php
-
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+$local = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($local)) {
+    require_once $local;
+} else {
+    require_once '/usr/local/share/php-project-45/vendor/autoload.php';
+}
 
-use BrainGames\Even;
+use function BrainGames\Games\Even\run;
 
-Even\playEven();
+run();

@@ -28,6 +28,7 @@
 
 - **PHP** ≥ 7.4
 - **Composer**
+- **Git**
 
 ---
 
@@ -38,6 +39,8 @@ git clone git@github.com:eager94/php-project-45.git
 cd php-project-45
 composer install
 ```
+
+## Запуск
 Для запуска отдельных игр make + название игры
 ```
 make brain-even
@@ -50,9 +53,22 @@ make brain-prime
 
 ## Демо
 ------
-###
+### brain-even
+
 [![asciicast](https://asciinema.org/a/751555.svg)](https://asciinema.org/a/751555)
+
+### brain-calc
+
 [![asciicast](https://asciinema.org/a/751590.svg)](https://asciinema.org/a/751590)
+
+### brain-gcd
+
 [![asciicast](https://asciinema.org/a/751786.svg)](https://asciinema.org/a/751786)
+
+### brain-progression 
+
 [![asciicast](https://asciinema.org/a/752110.svg)](https://asciinema.org/a/752110)
+
+### brain-prime
+
 [![asciicast](https://asciinema.org/a/752121.svg)](https://asciinema.org/a/752121)
