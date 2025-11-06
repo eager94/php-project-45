@@ -12,6 +12,7 @@
         "wp-cli/php-cli-tools": "^0.12.0@dev"
     },
     "bin": [
+        "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
