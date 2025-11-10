@@ -6,16 +6,6 @@ use function BrainGames\Engine\runGame;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
-function getGcd(int $a, int $b): int
-{
-    $a = abs($a);
-    $b = abs($b);
-    while ($b !== 0) {
-        [$a, $b] = [$b, $a % $b];
-    }
-    return $a;
-}
-
 function run(): void
 {
     $questionsAndAnswers = [];
@@ -31,4 +21,14 @@ function run(): void
     }
 
     runGame('Find the greatest common divisor of given numbers.', $questionsAndAnswers);
+}
+
+function getGcd(int $a, int $b): int
+{
+    $a = abs($a);
+    $b = abs($b);
+    while ($b !== 0) {
+        [$a, $b] = [$b, $a % $b];
+    }
+    return $a;
 }

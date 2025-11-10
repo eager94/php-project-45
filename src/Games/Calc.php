@@ -6,20 +6,6 @@ use function BrainGames\Engine\runGame;
 
 use const BrainGames\Engine\ROUNDS_COUNT;
 
-function calculate(int $a, int $b, string $operator): int
-{
-    switch ($operator) {
-        case '+':
-            return $a + $b;
-        case '-':
-            return $a - $b;
-        case '*':
-            return $a * $b;
-        default:
-            return 0;
-    }
-}
-
 function run(): void
 {
     $operators = ['+', '-', '*'];
@@ -37,4 +23,18 @@ function run(): void
     }
 
     runGame('What is the result of the expression?', $questionsAndAnswers);
+}
+
+function calculate(int $a, int $b, string $operator): int
+{
+    switch ($operator) {
+        case '+':
+            return $a + $b;
+        case '-':
+            return $a - $b;
+        case '*':
+            return $a * $b;
+        default:
+            throw new \Exception("Unknown operator");
+    }
 }
