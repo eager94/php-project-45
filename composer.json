@@ -20,9 +20,15 @@
         "bin/brain-prime"
     ],
     "autoload": {
-        "psr-4": {
-            "BrainGames\\": "src/"
-        }
+        "files": [
+            "src/Games/Even.php",
+            "src/Cli.php",
+            "src/Engine.php",
+            "src/Games/Calc.php",
+            "src/Games/Gcd.php",
+            "src/Games/Progression.php",
+            "src/Games/Prime.php"
+        ]
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "4.x-dev"
